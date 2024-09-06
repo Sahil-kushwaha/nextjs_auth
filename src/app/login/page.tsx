@@ -30,7 +30,7 @@ export default function loginPage() {
             catch (error:any) {
                 console.log("login failed")
                 setLoading(false)
-                setErrorType(error.response.data?.error)
+                setErrorType(error?.response.data.error)
                 toast(error.message) 
             }  
         }
